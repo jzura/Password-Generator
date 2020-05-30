@@ -93,6 +93,11 @@ function generatePassword() {
     possibleChar += specialSet;
   }
 
+  //If all prompts are no
+  if (specialChar == 'n' && numeric == 'n' && uppercase == 'n' && lowercase == 'n') {
+    alert("No characters to create password with!");
+  } 
+
   //Check possible characters
   console.log(possibleChar);
 
